@@ -1,0 +1,32 @@
+.timetable {
+  width: 100%;
+  background-color: #52abb3;
+  position: relative;
+}
+.timetable > h2 {
+  color: #f1feff;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+}
+.timetable__content {
+  width: 100%;
+  height: 300px;
+  max-width: 1250px;
+  margin: auto;
+
+  overflow-y: hidden;
+  
+}
+.timetable__content img {
+  height: 100%;
+  width: auto;
+}
+@media (min-width: 1013px) {
+  .timetable__content {
+    height: 400px;
+  }
+}
+@media (max-width: 700px) {
+  .timetable__content {
+    overflow-x: scroll;
+  }
+}

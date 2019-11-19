@@ -1,0 +1,269 @@
+.service {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+
+  padding-bottom: 120px;
+  background-image: none;
+}
+
+.service__h2 {
+  color: #1a1a1a;
+}
+.service__description {
+  color: #414141;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+.service-card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-bottom: 100px;
+}
+.service-card__box {
+  flex: 1 0 300px;
+  margin: 10px;
+  box-shadow: 2px 7px 20px rgba(0, 0, 0, 0.3);
+}
+.service-item {
+  width: 100%;
+  color: #fff;
+  height: 100%;
+  border-radius: 4px;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  transition: all 0.4s ease-in-out;
+  background-repeat: no-repeat;
+}
+.service-item * {
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}
+.personal-treaning {
+  background-image: url("../img/service-min.jpg");
+}
+.food-img {
+  background-image: url("../img/pp-min.jpg");
+}
+.service-inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding-top: 70px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  position: relative;
+  color: #bfbfbf;
+  padding: 15% 5%;
+}
+.service-inner > h3 {
+  color: #e5e5e5;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+.service-inner > p {
+  padding-bottom: 20px;
+  text-align: center;
+}
+.service-item__price {
+  position: absolute;
+  right: 20px;
+  bottom: 10px;
+  color: #4bafb7;
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+.service-item:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  content: "";
+  display: block;
+  opacity: 0.6;
+  background-color: #000;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 4px;
+}
+.service-item:before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 70px;
+  content: "";
+  display: block;
+
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 4px;
+}
+
+/************************* STOCK *****************************/
+.stock__wrapper {
+  width: 100%;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1900px;
+}
+.stock-item {
+  object-fit: cover;
+  background: url("../img/student.jpg") center no-repeat;
+  margin: 10px;
+  flex: 1 0 300px;
+  background-size: cover;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 50px 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stock-item:first-of-type {
+  background: url("../img/students2.jpg") center no-repeat;
+  background-size: cover;
+}
+.stock-item::before {
+  border-radius: 5px;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0px;
+  left: 0px;
+}
+.stock-item__title {
+  color: #fff;
+  font-size: 25px;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+.stock-item__text {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stock-item__text p {
+  color: #eee;
+  text-align: center;
+}
+.stock__h {
+  font-size: 2.5rem;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  color: #000;
+}
+@media (max-width: 780px) {
+  .stock__h {
+    font-size: 2rem;
+  }
+  main > section {
+    padding-right: 0.6rem;
+    padding-left: 0.6rem;
+  }
+}
+
+.stock-item__text a {
+  margin: auto;
+  border: 1px solid #4bafb7;
+  padding: 10px 20px;
+  border-radius: 3px;
+  background-color: #4bafb7;
+  color: #fff;
+  transition: all 0.4s;
+  margin-top: 40px;
+}
+.stock-item__text a:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.season-ticket-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.season-ticket__item {
+  flex: 1 0 280px;
+  margin: 10px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  box-shadow: 2px 7px 6px rgba(0, 0, 0, 0.1);
+  background-color: #fafafa;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  transition: all 0.4s;
+  transform: scale(1);
+}
+
+.season-ticket__h3 {
+  position: relative;
+  font-size: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.season-ticket__description {
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: center;
+  color: #333;
+}
+.season-ticket__price {
+  color: #4bafb7;
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  font-size: 25px;
+}
+.season-ticket__item:hover {
+  box-shadow: 2px 7px 20px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
+.season-ticket__h3::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  width: 100px;
+  height: 1px;
+  background-color: #4bafb7;
+  left: calc(50% - 50px);
+}
+@media (max-width: 850px) {
+  .service p {
+    font-size: 16px;
+  }
+}

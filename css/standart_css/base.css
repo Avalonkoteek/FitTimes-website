@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-family: "Rubik", "sans-serif";
+  font-size: 18px;
+}
+:root {
+  --padding: 150px;
+}
+p,
+a,
+div {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+  background-color: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display";
+  font-style: normal;
+  text-align: center;
+}
+h2 {
+  font-weight: 700;
+}
+h3 {
+  font-weight: 400;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+  background-color: #000;
+  line-height: calc(24 / 16);
+}
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000;
+}
+main > section {
+  padding: var(--padding) 2rem;
+  position: relative;
+}
+main > section h2 {
+  margin-bottom: 50px;
+  text-align: center;
+  width: 100%;
+}
+p {
+  font-size: 1rem;
+  color: #afacac;
+}
+main h2 {
+  font-size: 2.5rem;
+  color: #e2e2e2;
+}
+@media (max-width: 780px) {
+  main h2 {
+    font-size: 2rem;
+  }
+  main > section {
+    padding-right: 0.6rem;
+    padding-left: 0.6rem;
+  }
+}
+@media (max-width: 420px) {
+  main > section {
+    padding: 60px 5px;
+  }
+}
+
+ul {
+  line-height: calc(32 / 16);
+}
+
+button {
+  width: auto;
+  height: auto;
+  outline: none;
+  background-color: inherit;
+  border: 0;
+}
+
+input,
+textarea {
+  border: 0;
+  outline: none;
+  border-bottom: 1px solid #000;
+}
+input::placeholder,
+textarea::placeholder {
+  color: #dadada;
+  font-size: 14px;
+}
+@media (width: 1380px) {
+  body {
+    font-size: 18px;
+    line-height: calc(28 / 18);
+  }
+  h3 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1380px) and (min-width: 768px) {
+  h1,
+  h2 {
+    font-size: 70px;
+    line-height: calc(48 / 32);
+  }
+}
+@media (max-width: 767px) and (min-width: 320px) {
+  body {
+    font-size: 16px;
+    line-height: calc(24 / 14);
+  }
+  h3 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 25px;
+    line-height: calc(30 / 28);
+  }
+}
+.triangle {
+  width: 100%;
+  position: absolute;
+  top: -1px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  right: 0;
+}
+.triangle > img {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center top;
+}

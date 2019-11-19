@@ -1,0 +1,113 @@
+.trainers {
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 120px;
+  background-size: cover;
+  position: relative;
+}
+
+.trainers h2 {
+  margin-bottom: 80px;
+  color: #010101;
+  text-align: center;
+}
+.trainers__deskription {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 80px;
+}
+.trainers-wrap {
+  display: flex;
+  width: 100%;
+
+  flex-wrap: wrap;
+}
+.trainers-card {
+  box-sizing: border-box;
+  margin: 10px;
+  flex: 1 0 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #fff;
+  overflow: hidden;
+}
+
+@media (max-width: 750px) {
+  .trainers-card {
+    flex: 1 0 280px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 460px) {
+  .trainers-card {
+    flex-basis: 200px;
+    width: 100%;
+  }
+}
+.trainers-img__box {
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+}
+
+.dasha,
+.dima,
+.tania,
+.valeria {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  object-fit: cover;
+}
+.valeria {
+  background-image: url("../img/trainier/valeria.jpg");
+  background-position: 50% 25%;
+}
+.dasha {
+  background-image: url("../img/trainier/dasha-min.jpg");
+}
+.dima {
+  background-image: url("../img/trainier/dima-min.jpg");
+}
+.tania {
+  background-image: url("../img/trainier/tania-min.jpg");
+}
+.trainers-card-contend {
+  padding-top: 40px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.trainers-card-contend__social {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+  width: 220px;
+}
+
+.trainers-card-contend__name {
+  width: 100%;
+  font-size: 30px;
+  margin-bottom: 40px;
+  font-weight: 500;
+  color: #000;
+  text-align: center;
+}
+.trainers-card-contend__deskription {
+  color: #666;
+  font-size: 18px;
+  text-align: center;
+  padding: 0 5px;
+}

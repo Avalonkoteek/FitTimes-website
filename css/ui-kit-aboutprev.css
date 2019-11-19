@@ -1,0 +1,327 @@
+.face1,
+.face2 {
+  flex: 1 0 450px;
+}
+@media (max-width: 860px) {
+  .face1,
+  .face2 {
+    flex: 1 0 300px;
+  }
+}
+.face1 {
+  padding-right: 100px;
+}
+.face2 {
+  padding-left: 20px;
+}
+
+.about {
+  color: #afacac;
+  width: 100%;
+  display: flex;
+  padding-top: 70px;
+  font-size: 20px;
+  flex-wrap: wrap;
+  padding-bottom: 120px;
+}
+
+.about__img {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/about/about.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.6);
+  animation: fade-in 0.8s ease-in-out both 0.5s;
+}
+
+.about__face2 {
+  display: flex;
+  flex-direction: column;
+}
+.about__hello {
+  margin-top: 80px;
+  margin-bottom: 50px;
+  animation: slide-in 0.8s ease-in-out both;
+}
+.about__h2 {
+  margin-bottom: 60px;
+  animation: slide-up 0.8s ease-in-out both;
+}
+.about__deskription-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  animation: fade-in 0.8s ease-in-out both 0.5s;
+}
+.about__deskription {
+  flex: 1 0 300px;
+  line-height: 24px;
+  font-size: 1rem;
+}
+.about__deskription:first-of-type {
+  margin-right: 40px;
+}
+@media (max-width: 1470px) {
+  .about {
+    flex-direction: column;
+  }
+}
+.service {
+
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-position: bottom right;
+  background-size: contain;
+  background-image: url("../img/designe_elements/Component\ 4\ –\ 1.png");
+  background-repeat: no-repeat;
+}
+.service__box-content {
+  flex: 1 0 400px;
+  overflow: hidden;
+}
+.service__box-content:first-of-type {
+  margin-right: 20px;
+}
+
+.service__box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  margin-bottom: 20px;
+}
+.service__h2 {
+  margin-bottom: 65px;
+}
+
+.service-item {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  position: relative;
+
+  background-repeat: no-repeat;
+  background: linear-gradient(
+    to right,
+    rgba(78, 179, 187, 0.99),
+    rgba(78, 179, 187, 0.11)
+  );
+}
+.personal-treaning {
+  background: url("../img/service.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.food-img {
+  background: url("../img/pp.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.service-item:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  content: "";
+  display: block;
+  opacity: 0.6;
+  background-color: #000;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 4px;
+}
+.service-item:before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 70px;
+  content: "";
+  display: block;
+
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 4px;
+}
+
+.service-inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  position: relative;
+  font-size: 20px;
+}
+.service-inner > h3 {
+  text-align: center;
+  color: #e5e5e5;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+.service-inner > p {
+  text-align: center;
+  padding-right: 50px;
+  padding-left: 50px;
+  max-width: 500px;
+}
+.service-item__price {
+  padding: 0px;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  color: #4bafb7;
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+}
+
+@media (max-width: 440px) {
+  .service__box-content {
+    flex-basis: 220px;
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 20px;
+  }
+  .service-item__price {
+    display: none;
+  }
+}
+@media (max-width: 927px) {
+  .service__box-content:first-of-type {
+    margin-right: 0%;
+  }
+}
+@media (max-width: 1040px) {
+  .service__h2 {
+    font-size: 35px;
+  }
+  .service-inner {
+    font-size: 16px;
+  }
+}
+
+/**
+   * Animations
+   */
+@-webkit-keyframes slide-in {
+  0% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slide-in {
+  0% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes slide-out {
+  0% {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slide-out {
+  0% {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes slide-up {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 999px) {
+  .face1 {
+    padding-right: 0;
+  }
+  .face2 {
+    padding-left: 0;
+  }
+
+  .about__img {
+    height: 300px;
+  }
+  .service__card-box {
+    margin-bottom: 80px;
+  }
+  .training__item:hover {
+    transform: scale(1);
+  }
+  .training__item {
+    min-width: 100%;
+    max-width: 100%;
+  }
+}
